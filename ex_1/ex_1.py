@@ -1,7 +1,7 @@
 #!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 
 """
-	Linear regression with one variable
+	Linear regression with one variable - commented
 """
 
 import numpy as np
