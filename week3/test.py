@@ -6,7 +6,5 @@ data = np.loadtxt('data1.txt', delimiter=',')
 X = data[:, :2]
 y = data[:, 2]
 
-print(X[0, :])
-print(np.log(X[0, :]))
-print(y)
-print(-5 - y)
+print(np.sum((y[1:]+5) ** 2))
+print(3160/y.size)
