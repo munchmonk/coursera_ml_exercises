@@ -2,6 +2,15 @@
 
 """ 
 	Multivariate linear regression
+	
+		cost function
+		gradient descent
+		feature scaling and normalisation
+		vectorised implementation
+		normal equation
+		plotting cost function
+		plotting learning rate
+		plotting dataset
 """
 
 import numpy as np
@@ -51,12 +60,7 @@ class Exercise2:
 		J_history = []
 
 		for i in range(num_iters):
-			delta = 0
-			for i in range(self.m):
-				delta += np.dot((np.dot(theta, self.X[i]) - self.y[i]), self.X[i])
-			delta /= self.m
-			theta = theta - alpha * delta
-
+			theta = theta - (alpha / self.m) * np.dot(self.X.T, np.dot(self.X, theta) - self.y)
 			J_history.append(self.computeCostMulti(theta))
 
 		return theta, J_history
