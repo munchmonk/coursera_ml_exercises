@@ -3,14 +3,9 @@
 
 import numpy as np
 
-def sigmoid(z):
-    return 1.0 / (1.0 + np.exp(-z))
+A = np.array([[1, 2, 3], [4, 5, 6]])
+b = np.ones((1, A.shape[1]))
 
+C = np.concatenate([b, A], axis=0)
 
-a = 0
-b = np.array([0, 1])
-c = np.array([[0, 1], [-1, 2]])
-
-print(sigmoid(a))
-print(sigmoid(b))
-print(sigmoid(c))
+print(C)
