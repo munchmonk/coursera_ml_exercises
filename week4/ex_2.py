@@ -1,8 +1,13 @@
 #!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 
+"""
+	Neural network
+		precalculated weights
+		forward propagation
+"""
+
 import numpy as np
 from matplotlib import pyplot
-from scipy import optimize
 from scipy.io import loadmat
 
 
