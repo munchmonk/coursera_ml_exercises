@@ -47,7 +47,6 @@ class Exercise1:
 		sel = self.X[rand_indices, :]
 		self.displayData(sel)
 
-
 	def load_precalculated_weights(self):
 		weights = loadmat("ex4weights.mat")
 		self.Theta1 = weights["Theta1"]
